@@ -11,6 +11,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.naming.Context;
+import javax.naming.InitialContext;
 
 @WebServlet(urlPatterns = {"/chapter14/testdb"})
 public class testdb extends HttpServlet {
@@ -22,12 +24,11 @@ public class testdb extends HttpServlet {
         //response.setContentType("text/html; charset=UTF-8");
         Page.header(out);
         try {
-            //request.setCharacterEncoding("UTF-8");
-            //Context ic = new InitialContext();
-            //DataSource ds = (DataSource)ic.lookup("java:/comp/env/jdbc/book");
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/GEEKJOB_db", "GEEKJOB", "1234");
-            //try (Connection con = ds.getConnection()) {
+            Context ic = new InitialContext();
+            DataSource ds = (DataSource)ic.lookup("java:comp/env/jdbc/book");
+            //Class.forName("com.mysql.jdbc.Driver").newInstance();
+            //Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/GEEKJOB_db", "GEEKJOB", "1234");
+            try (Connection con = ds.getConnection()) {
             PreparedStatement st = con.prepareStatement("select * from product");
             ResultSet rs = st.executeQuery();
 
@@ -40,7 +41,7 @@ public class testdb extends HttpServlet {
                 out.println("<br>");
             }
             st.close();
-            //}
+            }
 
         } catch (Exception e) {
             e.printStackTrace(out);
