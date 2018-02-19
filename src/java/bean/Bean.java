@@ -1,6 +1,5 @@
 package bean;
 
-//import bean.Product;
 import tool.Page;
 import java.io.IOException;
 import java.io.PrintWriter;
