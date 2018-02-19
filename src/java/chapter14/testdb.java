@@ -36,7 +36,7 @@ public class testdb extends HttpServlet {
                     out.println(":");
                     out.println(rs.getString("name"));
                     out.println(":");
-                    out.println(rs.getString("price"));
+                    out.println(rs.getInt("price"));
                     out.println("<br>");
                 }
                 st.close();
