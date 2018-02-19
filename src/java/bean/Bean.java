@@ -1,7 +1,6 @@
 package bean;
 
-
-import bean.Product;
+//import bean.Product;
 import tool.Page;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,12 +16,10 @@ public class Bean extends HttpServlet {
     ) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         Page.header(out);
-        
-       
+
         //Productクラスのオブジェクトを生成。
-        Product p= new Product();
-        
-        
+        Product p = new Product();
+
         p.setId(1);
         p.setName("まぐろ");
         p.setPrice(100);

@@ -5,35 +5,36 @@
  */
 package bean;
 
-public class Product implements java.io.Serializable{
+public class Product implements java.io.Serializable {
 
-private int  id;
-private String name;
-private int price;
+    private int id;
+    private String name;
+    private int price;
 
 //各フィールドの値を取得するためのゲッタ
-public int getId(){
-return id;
-}
+    public int getId() {
+        return id;
+    }
 
-public String getName(){
-return name;
-}
-public int getPrice(){
-return price;
-}
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 
 //値を設定するためのセッタ
-public void setId(int id){
-this.id=id;
-}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-public void setName(String name){
-this.name=name;
-}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-public void setPrice(int price){
-this.price=price;
-}
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
 }
