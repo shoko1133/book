@@ -96,6 +96,22 @@
         <servlet-name>Search2</servlet-name>
         <servlet-class>chapter14.Search2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>NoBean</servlet-name>
+        <servlet-class>chapter15.NoBean</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Product</servlet-name>
+        <servlet-class>bean.Product</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Bean</servlet-name>
+        <servlet-class>bean.Bean</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DAO</servlet-name>
+        <servlet-class>dao.DAO</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
         <url-pattern>/new01</url-pattern>
@@ -191,6 +207,22 @@
     <servlet-mapping>
         <servlet-name>Search2</servlet-name>
         <url-pattern>/Search2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NoBean</servlet-name>
+        <url-pattern>/NoBean</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Product</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Bean</servlet-name>
+        <url-pattern>/Bean</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DAO</servlet-name>
+        <url-pattern>/DAO</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
