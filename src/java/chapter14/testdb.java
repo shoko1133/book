@@ -28,6 +28,13 @@ public class testdb extends HttpServlet {
             //Class.forName("com.mysql.jdbc.Driver").newInstance();
             //Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8889/GEEKJOB_db", "GEEKJOB", "1234");
             try (Connection con = ds.getConnection()) {
+                PreparedStatement db_st = null;
+
+                //削除
+                db_st = con.prepareStatement("DELETE from product where name=''");
+                int num = db_st.executeUpdate();
+                
+                //取得
                 PreparedStatement st = con.prepareStatement("select * from product");
                 ResultSet rs = st.executeQuery();
 

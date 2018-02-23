@@ -12,7 +12,7 @@ import java.sql.*;
 import javax.naming.Context;
 
 @WebServlet(urlPatterns = {"/chapter14/insert"})
-public class Insert extends HttpServlet {
+public class Insert4 extends HttpServlet {
 
     public void doPost(
             HttpServletRequest request, HttpServletResponse response

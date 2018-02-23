@@ -19,7 +19,7 @@ import javax.servlet.http.*;
 import javax.sql.DataSource;
 
 @WebServlet(urlPatterns = {"/chapter14/search"})
-public class Search extends HttpServlet {
+public class Search4 extends HttpServlet {
 
     public void doPost(
             HttpServletRequest request, HttpServletResponse response

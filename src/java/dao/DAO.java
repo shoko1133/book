@@ -11,10 +11,12 @@ public class DAO {
 
     //データソースへの接続を取得するためのメソッド
     public Connection getConnection() throws Exception {
+        //データソースの初期化。
         if (ds == null) {
             InitialContext ic = new InitialContext();
             ds = (DataSource) ic.lookup("java:comp/env/jdbc/book");
         }
+        //接続の取得。
         return ds.getConnection();
     }
 }

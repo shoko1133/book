@@ -82,11 +82,11 @@
     </servlet>
     <servlet>
         <servlet-name>Search</servlet-name>
-        <servlet-class>chapter14.Search</servlet-class>
+        <servlet-class>chapter14.Search4</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Insert</servlet-name>
-        <servlet-class>chapter14.Insert</servlet-class>
+        <servlet-class>chapter14.Insert4</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Transaction</servlet-name>
@@ -111,6 +111,22 @@
     <servlet>
         <servlet-name>DAO</servlet-name>
         <servlet-class>dao.DAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductDAO</servlet-name>
+        <servlet-class>dao.ProductDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Search3</servlet-name>
+        <servlet-class>chapter15.Search3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Insert10</servlet-name>
+        <servlet-class>chapter15.Insert10</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Attribute</servlet-name>
+        <servlet-class>chapter16.Attribute</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
@@ -223,6 +239,22 @@
     <servlet-mapping>
         <servlet-name>DAO</servlet-name>
         <url-pattern>/DAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductDAO</servlet-name>
+        <url-pattern>/ProductDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Search3</servlet-name>
+        <url-pattern>/Search3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Insert10</servlet-name>
+        <url-pattern>/Insert10</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Attribute</servlet-name>
+        <url-pattern>/Attribute</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
