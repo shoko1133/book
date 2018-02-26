@@ -1,11 +1,10 @@
-package org.apache.jsp.chapter16;
+package org.apache.jsp.chapter17;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import bean.Product;
 
-public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class cart_002dadd_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -14,8 +13,8 @@ public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/chapter16/../header.html");
-    _jspx_dependants.add("/chapter16/../footer.html");
+    _jspx_dependants.add("/chapter17/../header.html");
+    _jspx_dependants.add("/chapter17/../footer.html");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -58,10 +57,13 @@ public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>servlet</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write('\n');
-      out.write('\n');
-Product p = (Product) request.getAttribute("product");
-      out.write('\n');
+      out.write("\n");
+      out.write("<p>追加する商品を入力してください</p>\n");
+      out.write("<form action=\"cart-add\" method=\"post\">商品名\n");
+      out.write("    <input type=\"text\" name=\"name\">価格\n");
+      out.write("    <input type=\"text\" name=\"price\">\n");
+      out.write("    <input type=\"submit\" value=\"追加\">  \n");
+      out.write("    ");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");

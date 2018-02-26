@@ -1,4 +1,4 @@
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h1>Hello World!</h1>
+<%@page contentType="text/html; charset=UTF-8"%>
+<p>Hello World!</p>
     

@@ -1,22 +1,15 @@
-package org.apache.jsp.chapter16;
+package org.apache.jsp.chapter9;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import bean.Product;
 
-public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class include2_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
-
-  static {
-    _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/chapter16/../header.html");
-    _jspx_dependants.add("/chapter16/../footer.html");
-  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -48,23 +41,10 @@ public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
       out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
       out.write("\n");
-      out.write("    <head>\n");
-      out.write("        <meta charset=\"UTF-8\">\n");
-      out.write("        <title>servlet</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write('\n');
-      out.write('\n');
-Product p = (Product) request.getAttribute("product");
-      out.write('\n');
-      out.write("\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("<p>Hello World!</p>\n");
+      out.write("    ");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

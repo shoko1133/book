@@ -128,6 +128,46 @@
         <servlet-name>Attribute</servlet-name>
         <servlet-class>chapter16.Attribute</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Attribute2</servlet-name>
+        <servlet-class>chapter16.Attribute2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Count</servlet-name>
+        <servlet-class>chapter17.Count</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartAdd</servlet-name>
+        <servlet-class>chapter17.CartAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartGet</servlet-name>
+        <servlet-class>chapter17.CartGet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartRemove</servlet-name>
+        <servlet-class>chapter17.CartRemove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>chapter18.Add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Get</servlet-name>
+        <servlet-class>chapter18.Get</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Count2</servlet-name>
+        <servlet-class>chapter18.Count2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ParamServlet</servlet-name>
+        <servlet-class>chapter19.ParamServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ParamFilter</servlet-name>
+        <servlet-class>chapter19.ParamFilter</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
         <url-pattern>/new01</url-pattern>
@@ -256,9 +296,73 @@
         <servlet-name>Attribute</servlet-name>
         <url-pattern>/Attribute</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Attribute2</servlet-name>
+        <url-pattern>/Attribute2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Count</servlet-name>
+        <url-pattern>/Count</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartAdd</servlet-name>
+        <url-pattern>/CartAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartGet</servlet-name>
+        <url-pattern>/CartGet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartRemove</servlet-name>
+        <url-pattern>/CartRemove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/Add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Get</servlet-name>
+        <url-pattern>/Get</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Count2</servlet-name>
+        <url-pattern>/Count2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ParamServlet</servlet-name>
+        <url-pattern>/ParamServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ParamFilter</servlet-name>
+        <url-pattern>/ParamFilter</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <servlet>
+        <servlet-name>param-servlet</servlet-name>
+        <servlet-class>chapter19.ParamServlet</servlet-class>
+        <init-param>
+            <param-name>message</param-name>
+            <param-value>servlet-init-param</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>param-servlet</servlet-name>
+        <url-pattern>/chapter19/param-servlet</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>param-filter</filter-name>
+        <filter-class>chapter19.ParamFilter</filter-class>
+        <init-param>
+            <param-name>message</param-name>
+            <param-value>filter-init-param</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>param-filter</filter-name>
+        <url-pattern>/chapter19/param-servlet</url-pattern>
+    </filter-mapping>
 </web-app>

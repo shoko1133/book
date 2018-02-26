@@ -5,9 +5,14 @@ JSP
 *F
 + 0 attribute.jsp
 chapter16/attribute.jsp
++ 1 header.html
+chapter16/../header.html
++ 2 footer.html
+chapter16/../footer.html
 *L
-5,12:45
-17:57,3
-18:60,7
-19,4:67
+1:51
+1#1,10:52
+2#0,2:61
+4:63,2
+1#2,4:65
 *E

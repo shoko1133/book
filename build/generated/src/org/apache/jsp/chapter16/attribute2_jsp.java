@@ -4,8 +4,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import bean.Product;
+import java.util.List;
 
-public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class attribute2_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -58,9 +59,20 @@ public final class attribute_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>servlet</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+List<Product> list = (List<Product>)request.getAttribute("list");
       out.write('\n');
+for (Product p : list) {
       out.write('\n');
-Product p = (Product) request.getAttribute("product");
+      out.print(p.getId());
+      out.write(':');
+      out.print(p.getName());
+      out.write(':');
+      out.print(p.getPrice());
+      out.write("<br>\n");
+}
       out.write('\n');
       out.write("\n");
       out.write("</body>\n");
