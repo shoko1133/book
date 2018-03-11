@@ -12,17 +12,16 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 
-
 @WebServlet(urlPatterns = {"/chapter17/cart-add"})
 public class CartAdd extends HttpServlet {
-    
+
     @SuppressWarnings("unchecked")
     public void doPost(
             HttpServletRequest request, HttpServletResponse response
     ) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         Page.header(out);
-        
+
         String name = request.getParameter("name");
         int price = Integer.parseInt(request.getParameter("price"));
         //セッションを開始
@@ -34,16 +33,16 @@ public class CartAdd extends HttpServlet {
         if (cart == null) {
             cart = new ArrayList<Product>();
         }
-        
+
         //Productクラスのオブジェクトを作成しリクエストパラメーターから取得した商品名と価格を設定しリストに追加。
         Product p = new Product();
         p.setName(name);
         p.setPrice(price);
         cart.add(p);
-        
+
         //cartという名前にセッション属性にリストを設定します。
         session.setAttribute("cart", cart);
-        
+
         out.println("追加しました");
         Page.footer(out);
     }

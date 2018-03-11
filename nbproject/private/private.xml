@@ -3,20 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/shochan/NetBeansProjects/book/web/WEB-INF/web.xml</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter17/CartGet.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter17/CartRemove.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter18/Get.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/nbproject/build-impl.xml</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/tool/EncodingFilter.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter19/ParamFiler.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter17/CartAdd.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter18/Count2.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter18/Add.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/conf/MANIFEST.MF</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/web/chapter17/cart-add.jsp</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/tool/Page.java</file>
-            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter19/ParamServlet.java</file>
+            <file>file:/Users/shochan/NetBeansProjects/book/web/chapter21/el5-2.jsp</file>
+            <file>file:/Users/shochan/NetBeansProjects/book/src/java/chapter22/JSTL.java</file>
+            <file>file:/Users/shochan/NetBeansProjects/book/web/chapter22/jstl.jsp</file>
         </group>
     </open-files>
 </project-private>

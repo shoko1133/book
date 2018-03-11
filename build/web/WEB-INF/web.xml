@@ -18,7 +18,7 @@
     </servlet>
     <servlet>
         <servlet-name>select</servlet-name>
-        <servlet-class>chapter5.select</servlet-class>
+        <servlet-class>chapter6.select</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>checkbox</servlet-name>
@@ -167,6 +167,70 @@
     <servlet>
         <servlet-name>ParamFilter</servlet-name>
         <servlet-class>chapter19.ParamFilter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Attribute19_1</servlet-name>
+        <servlet-class>chapter19.Attribute19_1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Attribute19_2</servlet-name>
+        <servlet-class>chapter19.Attribute19_2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>File</servlet-name>
+        <servlet-class>chapter19.File</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Attribute19_3</servlet-name>
+        <servlet-class>chapter19.Attribute19_3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Tag</servlet-name>
+        <servlet-class>chapter20.Tag</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EL</servlet-name>
+        <servlet-class>chapter21.EL</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JSTL</servlet-name>
+        <servlet-class>chapter22.JSTL</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Action</servlet-name>
+        <servlet-class>tool.Action</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>tool.FrontController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchAction</servlet-name>
+        <servlet-class>chapter23.SearchAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertAction</servlet-name>
+        <servlet-class>chapter23.InsertAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Customer</servlet-name>
+        <servlet-class>bean.Customer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerDAO</servlet-name>
+        <servlet-class>dao.CustomerDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginAction</servlet-name>
+        <servlet-class>chapter24.LoginAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutAction</servlet-name>
+        <servlet-class>chapter24.logoutAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductAction</servlet-name>
+        <servlet-class>chapter25.ProductAction</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
@@ -335,6 +399,70 @@
     <servlet-mapping>
         <servlet-name>ParamFilter</servlet-name>
         <url-pattern>/ParamFilter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Attribute19_1</servlet-name>
+        <url-pattern>/Attribute19_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Attribute19_2</servlet-name>
+        <url-pattern>/Attribute19_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>File</servlet-name>
+        <url-pattern>/File</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Attribute19_3</servlet-name>
+        <url-pattern>/Attribute19_3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Tag</servlet-name>
+        <url-pattern>/Tag</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EL</servlet-name>
+        <url-pattern>/EL</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSTL</servlet-name>
+        <url-pattern>/JSTL</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Action</servlet-name>
+        <url-pattern>/Action</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>/FrontController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchAction</servlet-name>
+        <url-pattern>/SearchAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertAction</servlet-name>
+        <url-pattern>/InsertAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Customer</servlet-name>
+        <url-pattern>/Customer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerDAO</servlet-name>
+        <url-pattern>/CustomerDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginAction</servlet-name>
+        <url-pattern>/LoginAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutAction</servlet-name>
+        <url-pattern>/logoutAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductAction</servlet-name>
+        <url-pattern>/ProductAction</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

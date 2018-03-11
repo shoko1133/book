@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author shochan
  */
 public class ParamServlet extends HttpServlet {
-    
+
     //initメソッドで取得しらパラメーターを保存するためのprivateフィールドです。
     private String message;
 
@@ -25,14 +25,13 @@ public class ParamServlet extends HttpServlet {
         ServletConfig config = getServletConfig();
         message = config.getInitParameter("message");
     }
-    
-    
+
     public void doGet(
             HttpServletRequest request, HttpServletResponse response
     ) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         out.println(message);
-        
+
     }
 
 }

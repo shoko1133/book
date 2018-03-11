@@ -9,8 +9,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet(urlPatterns={"/chapter16/attribute2"})
+@WebServlet(urlPatterns = {"/chapter16/attribute2"})
 public class Attribute2 extends HttpServlet {
+
     public void doGet(
             HttpServletRequest request, HttpServletResponse response
     ) throws ServletException, IOException {
@@ -19,7 +20,7 @@ public class Attribute2 extends HttpServlet {
             //DAOを用いて全商品をProductDAOクラスのオブジェクトを生成してからsearchメソッドを呼び出します。
             ProductDAO dao = new ProductDAO();
             List<Product> list = dao.search("");
-            
+
             //setAttributeメソッドを用いてリクエスト属性に商品のリストを設定します。
             request.setAttribute("list", list);
             //jspファイルにフォワードする。

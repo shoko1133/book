@@ -18,15 +18,15 @@ public class CartGet extends HttpServlet {
     public void doGet(
             HttpServletRequest request, HttpServletResponse response
     ) throws ServletException, IOException {
-        PrintWriter out=response.getWriter();
+        PrintWriter out = response.getWriter();
         Page.header(out);
 
         //session取得
-        HttpSession session=request.getSession();
+        HttpSession session = request.getSession();
 
         //リストを取得
-        List<Product> cart=(List<Product>)session.getAttribute("cart");
-        
+        List<Product> cart = (List<Product>) session.getAttribute("cart");
+
         //取得したリストから全ての商品を取り出す。
         for (Product p : cart) {
             out.println("<p>");

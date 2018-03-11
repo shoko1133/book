@@ -18,15 +18,15 @@ public class CartRemove extends HttpServlet {
     public void doGet(
             HttpServletRequest request, HttpServletResponse response
     ) throws ServletException, IOException {
-        PrintWriter out=response.getWriter();
+        PrintWriter out = response.getWriter();
         Page.header(out);
 
         //session取得
-        HttpSession session=request.getSession();
-        
+        HttpSession session = request.getSession();
+
         //cartを削除
         session.removeAttribute("cart");
-        
+
         out.println("削除");
 
         Page.footer(out);

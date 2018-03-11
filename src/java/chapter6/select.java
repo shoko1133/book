@@ -1,12 +1,14 @@
-package chapter5;
+package chapter6;
 
 import tool.Page;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.http.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns={"/chapter6/select"})
 
 public class select extends HttpServlet {
 
@@ -14,8 +16,9 @@ public class select extends HttpServlet {
             HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        PrintWriter out=response.getWriter();
 
             request.setCharacterEncoding("UTF-8");
 
@@ -38,4 +41,4 @@ public class select extends HttpServlet {
                 Page.footer(out);
             }
 
-    }}
+    }

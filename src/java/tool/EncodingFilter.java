@@ -14,30 +14,40 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
 
 //Webフィルターアノテーション。URLパターンを/*にすることによってこのフィルタを作成する
 //全てのサーブレットとJSPファイルに適用します。
-@WebFilter(urlPatterns={"*"})
+@WebFilter(urlPatterns = {"*"})
 
 //フィルタのクラスではFilterインターフェースを実装して3つのメソッドをオーバーライドしています。
 public class EncodingFilter implements Filter {
-    
-    public void doFilter (
-        ServletRequest request, ServletResponse response,
-        FilterChain chain
+
+    public void doFilter(
+            ServletRequest request, ServletResponse response,
+            FilterChain chain
     ) throws IOException, ServletException {
         //リクエストの文字のエンコーディング
         request.setCharacterEncoding("UTF-8");
         //レスポンスのMIMEタイプと文字エンコーディング
         response.setContentType("text/html; charset=UTF-8");
-        
+
+        String path = ((HttpServletRequest) request).getRequestURI();
+        if (path.startsWith("/book/images/")) {
+            chain.doFilter(request, response);
+        }
+
         PrintWriter out = response.getWriter();
         //out.println("しょうちゃん");
-    
+
         //Fiterhainインターフェースのdofilterメソッドを実行しています。
         chain.doFilter(request, response);
         //out.println("にゃー");
     }
-    public void init(FilterConfig filterConfig){}
-    public void destroy(){}
+
+    public void init(FilterConfig filterConfig) {
+    }
+
+    public void destroy() {
+    }
 }

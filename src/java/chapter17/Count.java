@@ -23,9 +23,10 @@ public class Count extends HttpServlet {
         //セッション属性からカウンタの値を取得するが、getAttributeメソッドの戻り値はobject型なのでintegerに変換。
         Integer count = (Integer) session.getAttribute("count");
         //変数がnullの場合は最初のアクセスなのでnullの場合は0を代入。
-        if (count == null) 
+        if (count == null) {
             count = 0;
-        
+        }
+
         count++;
         //カウンタの値を+1したあとsetAttributeメソッドで再びセッション属性に保存しています。
         session.setAttribute("count", count);
