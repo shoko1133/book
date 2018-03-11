@@ -25,9 +25,10 @@
 <p>合計: ${total}円</p>
 <hr>
 
-
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <form action="Purchase.action" method="post">
     <p>お名前<input type="text" name="name"></p>
+    <p>郵便番号<input type="text" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','address','address');"></p>
     <p>ご住所<input type="text" name="address"></p>
     <p><input type="submit" value="購入を確定">
 </form>
