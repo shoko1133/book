@@ -7,6 +7,7 @@
 <p>${cart.size()}種類の商品があります。</p>
 <hr>
 
+<%! int total = 0; %>
 
 <table style="border-collapse:separate;border-spacing:10px;">
     <c:forEach var="item" items="${cart}">
@@ -18,8 +19,10 @@
             <td>${item.count}個</td>
             <td><a href="CartRemove.action?id=${item.product.id}カートから削除"></a></td>
         </tr>
+        <c:set var="total" value="${total + item.product.price * item.count}" />
     </c:forEach>
 </table>
+<p>合計: ${total}円</p>
 <hr>
 
 

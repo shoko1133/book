@@ -21,7 +21,7 @@
             <td>${item.product.name}</td>
             <td>${item.product.price}円</td>
             <td>${item.count}個</td>
-            <td><a href="CartRemove.action?id=${item.product.id}カートから削除"></a></td>
+            <td><a href="CartRemove.action?id=${item.product.id}">カートから削除</a></td>
         </tr>
     </c:forEach>
 </table>
