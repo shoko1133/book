@@ -256,6 +256,10 @@
         <servlet-name>CartRemoveAction</servlet-name>
         <servlet-class>chapter25.CartRemoveAction</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PrePurchaseAction</servlet-name>
+        <servlet-class>chapter25.PrePurchaseAction</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
         <url-pattern>/new01</url-pattern>
@@ -511,6 +515,10 @@
     <servlet-mapping>
         <servlet-name>CartRemoveAction</servlet-name>
         <url-pattern>/CartRemoveAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PrePurchaseAction</servlet-name>
+        <url-pattern>/PrePurchaseAction</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
