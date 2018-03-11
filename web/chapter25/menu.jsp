@@ -4,6 +4,6 @@
 <a href="../chapter25/cart.jsp">カート</a>
 <a href="../chapter25/Preview.action">購入</a>
 <a href="../chapter24/login-in.jsp">ログイン</a>
-<a href="../chapter24/logiout-in.jsp">ログアウト</a>
+<a href="../chapter24/logout-in.jsp">ログアウト</a>
 
 <hr>

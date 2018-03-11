@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../header.html" %>
-<p>${customer.login}さん、ログアウトしますか？</p>
-<p><a href="Logout.action">ログアウト</a></p>
-
+<%@include file="menu.jsp"%>
+購入手続きが完了しました。
 <%@include file="../footer.html" %>

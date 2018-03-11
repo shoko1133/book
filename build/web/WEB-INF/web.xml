@@ -232,6 +232,26 @@
         <servlet-name>ProductAction</servlet-name>
         <servlet-class>chapter25.ProductAction</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Item</servlet-name>
+        <servlet-class>bean.Item</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartAddAction</servlet-name>
+        <servlet-class>chapter25.CartAddAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PreviewAction</servlet-name>
+        <servlet-class>chapter25.PreviewAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PurchaseDAO</servlet-name>
+        <servlet-class>dao.PurchaseDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PurchaseAction</servlet-name>
+        <servlet-class>chapter25.PurchaseAction</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>new01</servlet-name>
         <url-pattern>/new01</url-pattern>
@@ -463,6 +483,26 @@
     <servlet-mapping>
         <servlet-name>ProductAction</servlet-name>
         <url-pattern>/ProductAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Item</servlet-name>
+        <url-pattern>/Item</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartAddAction</servlet-name>
+        <url-pattern>/CartAddAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PreviewAction</servlet-name>
+        <url-pattern>/PreviewAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PurchaseDAO</servlet-name>
+        <url-pattern>/PurchaseDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PurchaseAction</servlet-name>
+        <url-pattern>/PurchaseAction</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
